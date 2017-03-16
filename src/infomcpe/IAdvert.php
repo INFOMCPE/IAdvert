@@ -37,8 +37,8 @@ class IAdvert extends PluginBase implements Listener {
                    $this->getServer()->getPluginManager()->getPlugin("PluginDownloader")->installByID('SessionAPI');
                }
             }
-            $this->getServer()->getPluginManager()->registerEvents($this, $this);
         }
+		$this->getServer()->getPluginManager()->registerEvents($this, $this);
         }
          public function onCommand(CommandSender $player, Command $command, $label, array $args){
 		switch($command->getName()){
